@@ -1,0 +1,66 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Courier New', Courier, monospace;  
+}
+
+
+section, body, .container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+body{
+    transition: .15s linear;
+    background-color: #000000;
+    height: 100vh;
+}
+
+body, section{
+    padding: 0px;
+}
+
+h1{
+    font-size: 50px;
+    margin: 10px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+p{
+    margin: 20px;
+    font-weight: bold;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.container > * {
+    margin: 15px;
+}
+
+.btn{
+    transition: .15s linear;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: solid white 3px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.btn:hover, .btn:active{
+    cursor: pointer;
+    transition: .15s linear;
+    background-color: white;
+    color: black;
+}
