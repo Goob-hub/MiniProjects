@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Carousel</title>
+</head>
+<body>
+    <div class="carousel">
+        <div class="slide-container" id="container">
+            <div class="slide slide-1">
+            <img class="img" src="./img/person1.jpg" alt="">
+            <p class="slide-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi scelerisque eu ultrices vitae auctor. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Nunc consequat interdum varius sit amet mattis vulputate enim. Blandit volutpat maecenas volutpat blandit aliquam.
+            </p>            
+            </div>
+            <div class="slide slide-2 hidden">
+                <img class="img" src="./img/person2.jpg" alt="">
+                <p class="slide-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi scelerisque eu ultrices vitae auctor. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Nunc consequat interdum varius sit amet mattis vulputate enim. Blandit volutpat maecenas volutpat blandit aliquam.
+                </p>        
+            </div>
+            <div class="slide slide-3 hidden">
+                <img class="img" src="./img/person3.jpg" alt="">
+                <p class="slide-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi scelerisque eu ultrices vitae auctor. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Nunc consequat interdum varius sit amet mattis vulputate enim. Blandit volutpat maecenas volutpat blandit aliquam.
+                </p>        
+            </div>
+        </div>
+        <div class="slide-action">
+            <button class="btn" id="btn-left"><</button>
+            <button class="btn" id="add-slide">Add slide!</button>
+            <button class="btn" id="btn-right">></button>
+        </div>
+        <p>Current slide: <span id="currentSlide">1</span></p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
