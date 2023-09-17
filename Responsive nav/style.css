@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&family=Work+Sans&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    display: grid;
+    grid-template: 1fr 1fr / fit-content fit-content;
+    width: 100%;
+}
+
+nav > *{
+    background-color: rgba(0, 136, 255, 0.999);
+    border: solid rgba(0, 136, 255, 0.999) 2px;
+}
+
+button{
+    width: fit-content;
+    height: fit-content;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 30px;
+    margin: 0px
+}
+
+a{
+    display: flex;
+    padding: 10px 20px 10px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s linear;
+    background: none;
+    border: none;
+    margin: 0px;
+    padding: 5px;
+}
+
+button:hover{
+    transition: .2s linear;
+    background-color: rgb(91, 176, 251);
+}
+
+.btn-container, .title-container, .item-container{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.title-container, .btn-container, a{
+    padding: 20px;
+}
+
+.btn-container{
+    justify-content: flex-end;
+}
+
+.list-container{
+    transition: .3s linear;
+    grid-column: span 2;
+    height: 0%;
+    overflow: hidden;
+}
+
+.expand{
+    height: 100%;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.link{
+    transition: .2s linear;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+}
+
+.link:hover{
+    transition: .2s linear;
+    margin-left: 10px;
+    background-color: rgb(91, 176, 251);
+}
+
+@media (min-width: 768px) {
+    nav{
+        grid-template: 1fr / .3fr 1.7fr;
+        width: 100%;
+        background-color: rgba(0, 136, 255, 0.999);
+    }
+
+    nav > * {
+        width: 100%;
+        border: none;
+    }
+
+    .btn-container{
+        display: none;
+    }
+
+    .link, .list-container, .items, a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-container{
+        height: 100%;
+        grid-column: span 1;
+        overflow: visible;
+    }
+
+    .items {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+}
