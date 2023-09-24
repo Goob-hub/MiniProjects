@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&family=Inria+Serif&display=swap');
+
+:root{
+    --var-fontHead: 'Inria Serif', serif;;
+    --var-fontText: 'DM Sans', sans-serif;
+    --var-mainClr: #EDEDED;
+    --var-clr1: #595050;
+    --var-clr2: #9CAFBF;
+}
+
+/* General styling */
+body {
+    background-color: var(--var-mainClr);
+    color: var(--var-clr1);
+}
+
+h1, p, .service, .info, .contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: var(--var-fontHead);
+    font-weight: 100;
+    font-size: 5em;
+}
+
+p{
+    font-family: var(--var-fontText);
+    font-size: 1.75em;
+    letter-spacing: 1px;
+}
+
+a{
+    color: var(--var-clr2);
+    font-size: 1.75em;
+}
+
+section {
+    padding: 2.5%;
+}
+
+.img-flip {
+    transform: scaleX(-1);
+}
+
+/* Section 1 styling */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 0px 2.5% 0px 2.5%;
+}
+
+header > *{
+    align-self: baseline;
+}
+
+header p {
+    font-size: 1.75em;
+}
+
+.head {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img {
+    object-fit: cover;
+    width: 45%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+/* Section 2 styling */
+
+.service{
+   justify-content: center;
+   align-items: center;
+}
+
+.info h1 {
+    align-self: flex-start;
+}
+
+.info-desc {
+    align-self: flex-end;
+}
+
+.info {
+    min-width: 50%;
+}
+
+/* Section 3 styling */
+
+.contact .img {
+    height: 450px;
+}
+
+footer > * {
+    width: 45%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info{
+    align-items: baseline;
+}
+
+.btn {
+    transition: .1s linear;
+    padding: 10px;
+    border: none;
+    background-color: #9CAFBF;
+    color: var(--var-mainClr);
+    font-weight: bolder;
+    letter-spacing: .5px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    transition: .1s linear;
+    cursor: pointer;
+    background-color: #7d8e9c;
+}
+
